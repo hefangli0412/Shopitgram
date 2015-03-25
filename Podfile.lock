@@ -1,0 +1,50 @@
+PODS:
+  - Bolts (1.1.2)
+  - CMDQueryStringSerialization (0.3.1):
+    - ISO8601
+  - Facebook-iOS-SDK (3.18.2):
+    - Bolts (~> 1.0)
+  - ISO8601 (0.1.1)
+  - Parse (1.2.21):
+    - Facebook-iOS-SDK (~> 3.17)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - RESideMenu (4.0.7)
+  - SAMCache (0.3.0)
+  - SimpleAuth/Core (0.3.5):
+    - CMDQueryStringSerialization
+    - ReactiveCocoa
+  - SimpleAuth/Facebook (0.3.5):
+    - SimpleAuth/Core
+  - SimpleAuth/Instagram (0.3.5):
+    - SimpleAuth/UI
+  - SimpleAuth/UI (0.3.5):
+    - SimpleAuth/Core
+  - STTweetLabel (3.1.12)
+
+DEPENDENCIES:
+  - Parse (~> 1.2)
+  - RESideMenu
+  - SAMCache
+  - SimpleAuth/Facebook (~> 0.3)
+  - SimpleAuth/Instagram (~> 0.3)
+  - STTweetLabel (~> 3.1.12)
+
+SPEC CHECKSUMS:
+  Bolts: 2635e8698a630774689441047f3465d78c48d485
+  CMDQueryStringSerialization: 96f05d3225b6a0f6b7445a308c9e50bf84a5ba13
+  Facebook-iOS-SDK: 1193bafaca986a31d37c3e6fa845b99d6eaadaf8
+  ISO8601: a6afce5fbe854024802367c814fac4aa8d3586f9
+  Parse: 4be4e9fe2ee6dae16010e7622a5641a7c89154b7
+  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+  RESideMenu: a9c1cd2e64e60e1d3166ddac01a83e215a0e4d30
+  SAMCache: ab96161f1938a85b0fd426958fc7f36e29a9fe27
+  SimpleAuth: bbe6fb06b2921decc3abef9f397c1c236ccbc236
+  STTweetLabel: 5acb62e6a64449520f242c002364bd3ec3a44592
+
+COCOAPODS: 0.33.1

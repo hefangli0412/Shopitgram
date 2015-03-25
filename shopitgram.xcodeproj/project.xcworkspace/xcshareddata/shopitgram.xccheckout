@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>03E93897-A285-48B5-B423-AADDB0CAC04E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>shopitgram</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7BDB70279066FC7385FE013514CD9308C21953DF</key>
+		<string>https://bitbucket.org/hefangli0412/shopitgram.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>shopitgram.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7BDB70279066FC7385FE013514CD9308C21953DF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/hefangli0412/shopitgram.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7BDB70279066FC7385FE013514CD9308C21953DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7BDB70279066FC7385FE013514CD9308C21953DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>shopitgram%202</string>
+		</dict>
+	</array>
+</dict>
+</plist>

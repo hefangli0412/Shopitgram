@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4668D580193AB063009E755A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4668D57F193AB063009E755A /* Foundation.framework */; };
+		4668D582193AB063009E755A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4668D581193AB063009E755A /* CoreGraphics.framework */; };
+		4668D584193AB063009E755A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4668D583193AB063009E755A /* UIKit.framework */; };
+		4668D58A193AB063009E755A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4668D588193AB063009E755A /* InfoPlist.strings */; };
+		4668D58C193AB063009E755A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4668D58B193AB063009E755A /* main.m */; };
+		4668D590193AB063009E755A /* SIGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4668D58F193AB063009E755A /* SIGAppDelegate.m */; };
+		4668D593193AB063009E755A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4668D591193AB063009E755A /* Main.storyboard */; };
+		4668D59B193AB063009E755A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4668D59A193AB063009E755A /* Images.xcassets */; };
+		4668D5A2193AB063009E755A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4668D5A1193AB063009E755A /* XCTest.framework */; };
+		4668D5A3193AB063009E755A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4668D57F193AB063009E755A /* Foundation.framework */; };
+		4668D5A4193AB063009E755A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4668D583193AB063009E755A /* UIKit.framework */; };
+		4668D5AC193AB063009E755A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4668D5AA193AB063009E755A /* InfoPlist.strings */; };
+		4668D5AE193AB063009E755A /* ShopItGramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4668D5AD193AB063009E755A /* ShopItGramTests.m */; };
+		46808DEC193AD16C001CF162 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46808DE3193AD16C001CF162 /* AudioToolbox.framework */; };
+		46808DED193AD16C001CF162 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46808DE4193AD16C001CF162 /* CFNetwork.framework */; };
+		46808DEE193AD16C001CF162 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46808DE5193AD16C001CF162 /* CoreLocation.framework */; };
+		46808DEF193AD16C001CF162 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46808DE6193AD16C001CF162 /* libz.dylib */; };
+		46808DF0193AD16C001CF162 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46808DE7193AD16C001CF162 /* MobileCoreServices.framework */; };
+		46808DF1193AD16C001CF162 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46808DE8193AD16C001CF162 /* QuartzCore.framework */; };
+		46808DF2193AD16C001CF162 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46808DE9193AD16C001CF162 /* Security.framework */; };
+		46808DF3193AD16C001CF162 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46808DEA193AD16C001CF162 /* StoreKit.framework */; };
+		46808DF4193AD16C001CF162 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46808DEB193AD16C001CF162 /* SystemConfiguration.framework */; };
+		6BF12FA45A0540AE9FA3FCF5 /* libPods-shopitgram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA22759395741C79C893CEB /* libPods-shopitgram.a */; };
+		CDDBB27319D8CC700032198E /* SIGLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB27219D8CC700032198E /* SIGLoginController.m */; };
+		CDDBB27619D8D7200032198E /* SIGHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB27519D8D7200032198E /* SIGHomeController.m */; };
+		CDDBB27A19D8DB5A0032198E /* SIGLargeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB27919D8DB5A0032198E /* SIGLargeCollectionCell.m */; };
+		CDDBB27C19D8DBA30032198E /* SIGLargeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDDBB27B19D8DBA30032198E /* SIGLargeCollectionCell.xib */; };
+		CDDBB2F919DA27A80032198E /* SIGPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB2F719DA27A80032198E /* SIGPhotoController.m */; };
+		CDDBB30019DA4E8E0032198E /* SIGImageLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB2FF19DA4E8E0032198E /* SIGImageLabelView.m */; };
+		CDDBB30A19DA5B200032198E /* SIGAccountAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB30919DA5B200032198E /* SIGAccountAuthorization.m */; };
+		CDDBB31119DB53BA0032198E /* SIGRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB31019DB53BA0032198E /* SIGRootController.m */; };
+		CDDBB31419DB53FF0032198E /* SIGLeftMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB31319DB53FF0032198E /* SIGLeftMenuController.m */; };
+		CDDBB31A19DB55D40032198E /* SIGPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB31919DB55D40032198E /* SIGPostController.m */; };
+		CDDBB31D19DB56340032198E /* SIGActivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB31C19DB56340032198E /* SIGActivityController.m */; };
+		CDDBB32719DBD01F0032198E /* SIGCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB32619DBD01F0032198E /* SIGCommentController.m */; };
+		CDDBB33E19DE8D560032198E /* SIGFollowingTVController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB33D19DE8D560032198E /* SIGFollowingTVController.m */; };
+		CDDBB34119DE8D6D0032198E /* SIGNewsTVController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB34019DE8D6D0032198E /* SIGNewsTVController.m */; };
+		CDDBB34419DF17250032198E /* SIGExploreController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB34319DF17250032198E /* SIGExploreController.m */; };
+		CDDBB34719DF45A70032198E /* SIGSmallCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB34519DF45A70032198E /* SIGSmallCollectionCell.m */; };
+		CDDBB35019DF98D80032198E /* SIGEditTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB34F19DF98D80032198E /* SIGEditTextController.m */; };
+		CDDBB35919DFD38E0032198E /* SIGCommentTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB35819DFD38E0032198E /* SIGCommentTableController.m */; };
+		CDDBB35F19E03E250032198E /* NSObject+Utils_label.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB35E19E03E250032198E /* NSObject+Utils_label.m */; };
+		CDDBB36719E1B11D0032198E /* SIGProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB36619E1B11D0032198E /* SIGProfileController.m */; };
+		CDDBB36A19E1B2EA0032198E /* SIGProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDBB36919E1B2EA0032198E /* SIGProfileHeaderView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4668D5A5193AB063009E755A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4668D574193AB063009E755A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4668D57B193AB063009E755A;
+			remoteInfo = ShopItGram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3EA22759395741C79C893CEB /* libPods-shopitgram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shopitgram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4668D57C193AB063009E755A /* shopitgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopitgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4668D57F193AB063009E755A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4668D581193AB063009E755A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4668D583193AB063009E755A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4668D587193AB063009E755A /* shopitgram-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "shopitgram-Info.plist"; sourceTree = "<group>"; };
+		4668D589193AB063009E755A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4668D58B193AB063009E755A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4668D58D193AB063009E755A /* shopitgram-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shopitgram-Prefix.pch"; sourceTree = "<group>"; };
+		4668D58E193AB063009E755A /* SIGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIGAppDelegate.h; sourceTree = "<group>"; };
+		4668D58F193AB063009E755A /* SIGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIGAppDelegate.m; sourceTree = "<group>"; };
+		4668D592193AB063009E755A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4668D59A193AB063009E755A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4668D5A0193AB063009E755A /* shopitgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shopitgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4668D5A1193AB063009E755A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4668D5A9193AB063009E755A /* shopitgramTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "shopitgramTests-Info.plist"; sourceTree = "<group>"; };
+		4668D5AB193AB063009E755A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4668D5AD193AB063009E755A /* ShopItGramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopItGramTests.m; sourceTree = "<group>"; };
+		46808DE3193AD16C001CF162 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		46808DE4193AD16C001CF162 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		46808DE5193AD16C001CF162 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		46808DE6193AD16C001CF162 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		46808DE7193AD16C001CF162 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		46808DE8193AD16C001CF162 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		46808DE9193AD16C001CF162 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		46808DEA193AD16C001CF162 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		46808DEB193AD16C001CF162 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CDDBB27119D8CC700032198E /* SIGLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGLoginController.h; path = Login/SIGLoginController.h; sourceTree = "<group>"; };
+		CDDBB27219D8CC700032198E /* SIGLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGLoginController.m; path = Login/SIGLoginController.m; sourceTree = "<group>"; };
+		CDDBB27419D8D7200032198E /* SIGHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGHomeController.h; path = Home/SIGHomeController.h; sourceTree = "<group>"; };
+		CDDBB27519D8D7200032198E /* SIGHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGHomeController.m; path = Home/SIGHomeController.m; sourceTree = "<group>"; };
+		CDDBB27819D8DB5A0032198E /* SIGLargeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGLargeCollectionCell.h; path = Views/SIGLargeCollectionCell.h; sourceTree = "<group>"; };
+		CDDBB27919D8DB5A0032198E /* SIGLargeCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGLargeCollectionCell.m; path = Views/SIGLargeCollectionCell.m; sourceTree = "<group>"; };
+		CDDBB27B19D8DBA30032198E /* SIGLargeCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SIGLargeCollectionCell.xib; path = Views/SIGLargeCollectionCell.xib; sourceTree = "<group>"; };
+		CDDBB2F719DA27A80032198E /* SIGPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGPhotoController.m; path = Controllers/SIGPhotoController.m; sourceTree = "<group>"; };
+		CDDBB2F819DA27A80032198E /* SIGPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGPhotoController.h; path = Controllers/SIGPhotoController.h; sourceTree = "<group>"; };
+		CDDBB2FE19DA4E8E0032198E /* SIGImageLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGImageLabelView.h; path = Views/SIGImageLabelView.h; sourceTree = "<group>"; };
+		CDDBB2FF19DA4E8E0032198E /* SIGImageLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGImageLabelView.m; path = Views/SIGImageLabelView.m; sourceTree = "<group>"; };
+		CDDBB30819DA5B200032198E /* SIGAccountAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGAccountAuthorization.h; path = Login/SIGAccountAuthorization.h; sourceTree = "<group>"; };
+		CDDBB30919DA5B200032198E /* SIGAccountAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGAccountAuthorization.m; path = Login/SIGAccountAuthorization.m; sourceTree = "<group>"; };
+		CDDBB30F19DB53BA0032198E /* SIGRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGRootController.h; path = SideMenu/SIGRootController.h; sourceTree = "<group>"; };
+		CDDBB31019DB53BA0032198E /* SIGRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGRootController.m; path = SideMenu/SIGRootController.m; sourceTree = "<group>"; };
+		CDDBB31219DB53FF0032198E /* SIGLeftMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGLeftMenuController.h; path = SideMenu/SIGLeftMenuController.h; sourceTree = "<group>"; };
+		CDDBB31319DB53FF0032198E /* SIGLeftMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGLeftMenuController.m; path = SideMenu/SIGLeftMenuController.m; sourceTree = "<group>"; };
+		CDDBB31819DB55D40032198E /* SIGPostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGPostController.h; path = Post/SIGPostController.h; sourceTree = "<group>"; };
+		CDDBB31919DB55D40032198E /* SIGPostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGPostController.m; path = Post/SIGPostController.m; sourceTree = "<group>"; };
+		CDDBB31B19DB56340032198E /* SIGActivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGActivityController.h; path = Activity/SIGActivityController.h; sourceTree = "<group>"; };
+		CDDBB31C19DB56340032198E /* SIGActivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGActivityController.m; path = Activity/SIGActivityController.m; sourceTree = "<group>"; };
+		CDDBB32519DBD01F0032198E /* SIGCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGCommentController.h; path = Controllers/SIGCommentController.h; sourceTree = "<group>"; };
+		CDDBB32619DBD01F0032198E /* SIGCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGCommentController.m; path = Controllers/SIGCommentController.m; sourceTree = "<group>"; };
+		CDDBB33C19DE8D560032198E /* SIGFollowingTVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGFollowingTVController.h; path = Activity/SIGFollowingTVController.h; sourceTree = "<group>"; };
+		CDDBB33D19DE8D560032198E /* SIGFollowingTVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGFollowingTVController.m; path = Activity/SIGFollowingTVController.m; sourceTree = "<group>"; };
+		CDDBB33F19DE8D6D0032198E /* SIGNewsTVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGNewsTVController.h; path = Activity/SIGNewsTVController.h; sourceTree = "<group>"; };
+		CDDBB34019DE8D6D0032198E /* SIGNewsTVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGNewsTVController.m; path = Activity/SIGNewsTVController.m; sourceTree = "<group>"; };
+		CDDBB34219DF17250032198E /* SIGExploreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGExploreController.h; path = Explore/SIGExploreController.h; sourceTree = "<group>"; };
+		CDDBB34319DF17250032198E /* SIGExploreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGExploreController.m; path = Explore/SIGExploreController.m; sourceTree = "<group>"; };
+		CDDBB34519DF45A70032198E /* SIGSmallCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGSmallCollectionCell.m; path = Views/SIGSmallCollectionCell.m; sourceTree = "<group>"; };
+		CDDBB34619DF45A70032198E /* SIGSmallCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGSmallCollectionCell.h; path = Views/SIGSmallCollectionCell.h; sourceTree = "<group>"; };
+		CDDBB34E19DF98D80032198E /* SIGEditTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGEditTextController.h; path = Post/SIGEditTextController.h; sourceTree = "<group>"; };
+		CDDBB34F19DF98D80032198E /* SIGEditTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGEditTextController.m; path = Post/SIGEditTextController.m; sourceTree = "<group>"; };
+		CDDBB35719DFD38E0032198E /* SIGCommentTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGCommentTableController.h; path = Home/SIGCommentTableController.h; sourceTree = "<group>"; };
+		CDDBB35819DFD38E0032198E /* SIGCommentTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGCommentTableController.m; path = Home/SIGCommentTableController.m; sourceTree = "<group>"; };
+		CDDBB35D19E03E250032198E /* NSObject+Utils_label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Utils_label.h"; path = "Categories/NSObject+Utils_label.h"; sourceTree = "<group>"; };
+		CDDBB35E19E03E250032198E /* NSObject+Utils_label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Utils_label.m"; path = "Categories/NSObject+Utils_label.m"; sourceTree = "<group>"; };
+		CDDBB36519E1B11D0032198E /* SIGProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGProfileController.h; path = Profile/SIGProfileController.h; sourceTree = "<group>"; };
+		CDDBB36619E1B11D0032198E /* SIGProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGProfileController.m; path = Profile/SIGProfileController.m; sourceTree = "<group>"; };
+		CDDBB36819E1B2EA0032198E /* SIGProfileHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGProfileHeaderView.h; path = Profile/SIGProfileHeaderView.h; sourceTree = "<group>"; };
+		CDDBB36919E1B2EA0032198E /* SIGProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGProfileHeaderView.m; path = Profile/SIGProfileHeaderView.m; sourceTree = "<group>"; };
+		E737FAA8FA0740959E8EA853 /* Pods-shopitgram.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopitgram.xcconfig"; path = "Pods/Pods-shopitgram.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4668D579193AB063009E755A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46808DEC193AD16C001CF162 /* AudioToolbox.framework in Frameworks */,
+				46808DED193AD16C001CF162 /* CFNetwork.framework in Frameworks */,
+				46808DEE193AD16C001CF162 /* CoreLocation.framework in Frameworks */,
+				46808DEF193AD16C001CF162 /* libz.dylib in Frameworks */,
+				46808DF0193AD16C001CF162 /* MobileCoreServices.framework in Frameworks */,
+				46808DF1193AD16C001CF162 /* QuartzCore.framework in Frameworks */,
+				46808DF2193AD16C001CF162 /* Security.framework in Frameworks */,
+				46808DF3193AD16C001CF162 /* StoreKit.framework in Frameworks */,
+				46808DF4193AD16C001CF162 /* SystemConfiguration.framework in Frameworks */,
+				4668D582193AB063009E755A /* CoreGraphics.framework in Frameworks */,
+				4668D584193AB063009E755A /* UIKit.framework in Frameworks */,
+				4668D580193AB063009E755A /* Foundation.framework in Frameworks */,
+				6BF12FA45A0540AE9FA3FCF5 /* libPods-shopitgram.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4668D59D193AB063009E755A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4668D5A2193AB063009E755A /* XCTest.framework in Frameworks */,
+				4668D5A4193AB063009E755A /* UIKit.framework in Frameworks */,
+				4668D5A3193AB063009E755A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46079D61193AB6410057F3C5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBB27419D8D7200032198E /* SIGHomeController.h */,
+				CDDBB27519D8D7200032198E /* SIGHomeController.m */,
+				CDDBB35719DFD38E0032198E /* SIGCommentTableController.h */,
+				CDDBB35819DFD38E0032198E /* SIGCommentTableController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		46079D62193AB6480057F3C5 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBB34219DF17250032198E /* SIGExploreController.h */,
+				CDDBB34319DF17250032198E /* SIGExploreController.m */,
+			);
+			name = Explore;
+			sourceTree = "<group>";
+		};
+		46079D63193AB6510057F3C5 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBB31819DB55D40032198E /* SIGPostController.h */,
+				CDDBB31919DB55D40032198E /* SIGPostController.m */,
+				CDDBB34E19DF98D80032198E /* SIGEditTextController.h */,
+				CDDBB34F19DF98D80032198E /* SIGEditTextController.m */,
+			);
+			name = Post;
+			sourceTree = "<group>";
+		};
+		46079D64193AB6580057F3C5 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBB31B19DB56340032198E /* SIGActivityController.h */,
+				CDDBB31C19DB56340032198E /* SIGActivityController.m */,
+				CDDBB33C19DE8D560032198E /* SIGFollowingTVController.h */,
+				CDDBB33D19DE8D560032198E /* SIGFollowingTVController.m */,
+				CDDBB33F19DE8D6D0032198E /* SIGNewsTVController.h */,
+				CDDBB34019DE8D6D0032198E /* SIGNewsTVController.m */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		46079D65193AB65F0057F3C5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBB36519E1B11D0032198E /* SIGProfileController.h */,
+				CDDBB36619E1B11D0032198E /* SIGProfileController.m */,
+				CDDBB36819E1B2EA0032198E /* SIGProfileHeaderView.h */,
+				CDDBB36919E1B2EA0032198E /* SIGProfileHeaderView.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		4668D573193AB063009E755A = {
+			isa = PBXGroup;
+			children = (
+				4668D585193AB063009E755A /* ShopItGram */,
+				4668D5A7193AB063009E755A /* ShopItGramTests */,
+				4668D57E193AB063009E755A /* Frameworks */,
+				4668D57D193AB063009E755A /* Products */,
+				E737FAA8FA0740959E8EA853 /* Pods-shopitgram.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		4668D57D193AB063009E755A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4668D57C193AB063009E755A /* shopitgram.app */,
+				4668D5A0193AB063009E755A /* shopitgramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4668D57E193AB063009E755A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46808DE3193AD16C001CF162 /* AudioToolbox.framework */,
+				46808DE4193AD16C001CF162 /* CFNetwork.framework */,
+				46808DE5193AD16C001CF162 /* CoreLocation.framework */,
+				46808DE6193AD16C001CF162 /* libz.dylib */,
+				46808DE7193AD16C001CF162 /* MobileCoreServices.framework */,
+				46808DE8193AD16C001CF162 /* QuartzCore.framework */,
+				46808DE9193AD16C001CF162 /* Security.framework */,
+				46808DEA193AD16C001CF162 /* StoreKit.framework */,
+				46808DEB193AD16C001CF162 /* SystemConfiguration.framework */,
+				4668D57F193AB063009E755A /* Foundation.framework */,
+				4668D581193AB063009E755A /* CoreGraphics.framework */,
+				4668D583193AB063009E755A /* UIKit.framework */,
+				4668D5A1193AB063009E755A /* XCTest.framework */,
+				3EA22759395741C79C893CEB /* libPods-shopitgram.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4668D585193AB063009E755A /* ShopItGram */ = {
+			isa = PBXGroup;
+			children = (
+				4668D58E193AB063009E755A /* SIGAppDelegate.h */,
+				4668D58F193AB063009E755A /* SIGAppDelegate.m */,
+				4668D591193AB063009E755A /* Main.storyboard */,
+				CDDBB30119DA52650032198E /* Categories */,
+				CDDBB27719D8DADB0032198E /* Views */,
+				CDDBB2F619DA275D0032198E /* Controllers */,
+				CDDBB30E19DB53690032198E /* SideMenu */,
+				CD81509B19D8C27E00CA9DFA /* Login */,
+				46079D61193AB6410057F3C5 /* Home */,
+				46079D62193AB6480057F3C5 /* Explore */,
+				46079D63193AB6510057F3C5 /* Post */,
+				46079D64193AB6580057F3C5 /* Activity */,
+				46079D65193AB65F0057F3C5 /* Profile */,
+				4668D59A193AB063009E755A /* Images.xcassets */,
+				4668D586193AB063009E755A /* Supporting Files */,
+			);
+			path = ShopItGram;
+			sourceTree = "<group>";
+		};
+		4668D586193AB063009E755A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4668D587193AB063009E755A /* shopitgram-Info.plist */,
+				4668D588193AB063009E755A /* InfoPlist.strings */,
+				4668D58B193AB063009E755A /* main.m */,
+				4668D58D193AB063009E755A /* shopitgram-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4668D5A7193AB063009E755A /* ShopItGramTests */ = {
+			isa = PBXGroup;
+			children = (
+				4668D5AD193AB063009E755A /* ShopItGramTests.m */,
+				4668D5A8193AB063009E755A /* Supporting Files */,
+			);
+			path = ShopItGramTests;
+			sourceTree = "<group>";
+		};
+		4668D5A8193AB063009E755A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4668D5A9193AB063009E755A /* shopitgramTests-Info.plist */,
+				4668D5AA193AB063009E755A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD81509B19D8C27E00CA9DFA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBB27119D8CC700032198E /* SIGLoginController.h */,
+				CDDBB27219D8CC700032198E /* SIGLoginController.m */,
+				CDDBB30819DA5B200032198E /* SIGAccountAuthorization.h */,
+				CDDBB30919DA5B200032198E /* SIGAccountAuthorization.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		CDDBB27719D8DADB0032198E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBB34619DF45A70032198E /* SIGSmallCollectionCell.h */,
+				CDDBB34519DF45A70032198E /* SIGSmallCollectionCell.m */,
+				CDDBB27819D8DB5A0032198E /* SIGLargeCollectionCell.h */,
+				CDDBB27919D8DB5A0032198E /* SIGLargeCollectionCell.m */,
+				CDDBB27B19D8DBA30032198E /* SIGLargeCollectionCell.xib */,
+				CDDBB2FE19DA4E8E0032198E /* SIGImageLabelView.h */,
+				CDDBB2FF19DA4E8E0032198E /* SIGImageLabelView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CDDBB2F619DA275D0032198E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBB2F819DA27A80032198E /* SIGPhotoController.h */,
+				CDDBB2F719DA27A80032198E /* SIGPhotoController.m */,
+				CDDBB32519DBD01F0032198E /* SIGCommentController.h */,
+				CDDBB32619DBD01F0032198E /* SIGCommentController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CDDBB30119DA52650032198E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBB35D19E03E250032198E /* NSObject+Utils_label.h */,
+				CDDBB35E19E03E250032198E /* NSObject+Utils_label.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		CDDBB30E19DB53690032198E /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CDDBB30F19DB53BA0032198E /* SIGRootController.h */,
+				CDDBB31019DB53BA0032198E /* SIGRootController.m */,
+				CDDBB31219DB53FF0032198E /* SIGLeftMenuController.h */,
+				CDDBB31319DB53FF0032198E /* SIGLeftMenuController.m */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4668D57B193AB063009E755A /* shopitgram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4668D5B1193AB063009E755A /* Build configuration list for PBXNativeTarget "shopitgram" */;
+			buildPhases = (
+				E2951B30990A446DBA16AA1D /* Check Pods Manifest.lock */,
+				4668D578193AB063009E755A /* Sources */,
+				4668D579193AB063009E755A /* Frameworks */,
+				4668D57A193AB063009E755A /* Resources */,
+				OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */,
+				10BD2976334844CAA111935A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shopitgram;
+			productName = ShopItGram;
+			productReference = 4668D57C193AB063009E755A /* shopitgram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4668D59F193AB063009E755A /* shopitgramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4668D5B4193AB063009E755A /* Build configuration list for PBXNativeTarget "shopitgramTests" */;
+			buildPhases = (
+				4668D59C193AB063009E755A /* Sources */,
+				4668D59D193AB063009E755A /* Frameworks */,
+				4668D59E193AB063009E755A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4668D5A6193AB063009E755A /* PBXTargetDependency */,
+			);
+			name = shopitgramTests;
+			productName = ShopItGramTests;
+			productReference = 4668D5A0193AB063009E755A /* shopitgramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4668D574193AB063009E755A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SIG;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					4668D59F193AB063009E755A = {
+						TestTargetID = 4668D57B193AB063009E755A;
+					};
+				};
+			};
+			buildConfigurationList = 4668D577193AB063009E755A /* Build configuration list for PBXProject "shopitgram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4668D573193AB063009E755A;
+			productRefGroup = 4668D57D193AB063009E755A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4668D57B193AB063009E755A /* shopitgram */,
+				4668D59F193AB063009E755A /* shopitgramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4668D57A193AB063009E755A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4668D59B193AB063009E755A /* Images.xcassets in Resources */,
+				CDDBB27C19D8DBA30032198E /* SIGLargeCollectionCell.xib in Resources */,
+				4668D58A193AB063009E755A /* InfoPlist.strings in Resources */,
+				4668D593193AB063009E755A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4668D59E193AB063009E755A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4668D5AC193AB063009E755A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10BD2976334844CAA111935A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-shopitgram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2951B30990A446DBA16AA1D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Objective-Clean Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [[ -z ${SKIP_OBJCLEAN} || ${SKIP_OBJCLEAN} != 1 ]]; then\nif [[ -d \"${LOCAL_APPS_DIR}/Objective-Clean.app\" ]]; then \n\"${LOCAL_APPS_DIR}\"/Objective-Clean.app/Contents/Resources/ObjClean.app/Contents/MacOS/ObjClean \"${SRCROOT}\" \nelse\necho \"warning: You have to install and set up Objective-Clean to use its features!\" \nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4668D578193AB063009E755A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDBB34719DF45A70032198E /* SIGSmallCollectionCell.m in Sources */,
+				CDDBB36A19E1B2EA0032198E /* SIGProfileHeaderView.m in Sources */,
+				CDDBB36719E1B11D0032198E /* SIGProfileController.m in Sources */,
+				4668D590193AB063009E755A /* SIGAppDelegate.m in Sources */,
+				CDDBB2F919DA27A80032198E /* SIGPhotoController.m in Sources */,
+				CDDBB31A19DB55D40032198E /* SIGPostController.m in Sources */,
+				CDDBB27A19D8DB5A0032198E /* SIGLargeCollectionCell.m in Sources */,
+				CDDBB31D19DB56340032198E /* SIGActivityController.m in Sources */,
+				CDDBB27619D8D7200032198E /* SIGHomeController.m in Sources */,
+				CDDBB33E19DE8D560032198E /* SIGFollowingTVController.m in Sources */,
+				CDDBB27319D8CC700032198E /* SIGLoginController.m in Sources */,
+				CDDBB30A19DA5B200032198E /* SIGAccountAuthorization.m in Sources */,
+				CDDBB32719DBD01F0032198E /* SIGCommentController.m in Sources */,
+				CDDBB31419DB53FF0032198E /* SIGLeftMenuController.m in Sources */,
+				CDDBB34119DE8D6D0032198E /* SIGNewsTVController.m in Sources */,
+				CDDBB35919DFD38E0032198E /* SIGCommentTableController.m in Sources */,
+				CDDBB31119DB53BA0032198E /* SIGRootController.m in Sources */,
+				CDDBB35019DF98D80032198E /* SIGEditTextController.m in Sources */,
+				4668D58C193AB063009E755A /* main.m in Sources */,
+				CDDBB35F19E03E250032198E /* NSObject+Utils_label.m in Sources */,
+				CDDBB34419DF17250032198E /* SIGExploreController.m in Sources */,
+				CDDBB30019DA4E8E0032198E /* SIGImageLabelView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4668D59C193AB063009E755A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4668D5AE193AB063009E755A /* ShopItGramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4668D5A6193AB063009E755A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4668D57B193AB063009E755A /* shopitgram */;
+			targetProxy = 4668D5A5193AB063009E755A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4668D588193AB063009E755A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4668D589193AB063009E755A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4668D591193AB063009E755A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4668D592193AB063009E755A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4668D5AA193AB063009E755A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4668D5AB193AB063009E755A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4668D5AF193AB063009E755A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4668D5B0193AB063009E755A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4668D5B2193AB063009E755A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E737FAA8FA0740959E8EA853 /* Pods-shopitgram.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShopItGram/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShopItGram/shopitgram-Prefix.pch";
+				INFOPLIST_FILE = "ShopItGram/shopitgram-Info.plist";
+				PRODUCT_NAME = shopitgram;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4668D5B3193AB063009E755A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E737FAA8FA0740959E8EA853 /* Pods-shopitgram.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShopItGram/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShopItGram/shopitgram-Prefix.pch";
+				INFOPLIST_FILE = "ShopItGram/shopitgram-Info.plist";
+				PRODUCT_NAME = shopitgram;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4668D5B5193AB063009E755A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/shopitgram.app/ShopItGram";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShopItGram/ShopItGram-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShopItGramTests/shopitgramTests-Info.plist";
+				PRODUCT_NAME = shopitgramTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4668D5B6193AB063009E755A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/shopitgram.app/ShopItGram";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShopItGram/ShopItGram-Prefix.pch";
+				INFOPLIST_FILE = "ShopItGramTests/shopitgramTests-Info.plist";
+				PRODUCT_NAME = shopitgramTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4668D577193AB063009E755A /* Build configuration list for PBXProject "shopitgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4668D5AF193AB063009E755A /* Debug */,
+				4668D5B0193AB063009E755A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4668D5B1193AB063009E755A /* Build configuration list for PBXNativeTarget "shopitgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4668D5B2193AB063009E755A /* Debug */,
+				4668D5B3193AB063009E755A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4668D5B4193AB063009E755A /* Build configuration list for PBXNativeTarget "shopitgramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4668D5B5193AB063009E755A /* Debug */,
+				4668D5B6193AB063009E755A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4668D574193AB063009E755A /* Project object */;
+}
